@@ -22,8 +22,7 @@ export const SITE_CONFIG: SiteConfig = {
     },
   ],
   socialImage: "/og-placeholder.png",
-  // TODO: replace with the deployed domain
-  canonicalURL: "https://example.com",
+  canonicalURL: "https://portfolio-website-nine-rho-13.vercel.app",
 };
 
 export const SITE_CONTENT: SiteContent = {

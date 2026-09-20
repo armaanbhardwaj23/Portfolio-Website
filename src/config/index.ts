@@ -1,98 +1,138 @@
 import type { SiteConfig, SiteContent } from "../types";
 
+const GITHUB_URL = "https://github.com/armaanbhardwaj23";
+
 export const SITE_CONFIG: SiteConfig = {
-  title: "Alejandro Múnez — Mobile & Web Developer",
-  author: "Alejandro Múnez Cuntez",
+  title: "Armaan Bhardwaj — AI/ML Engineer",
+  author: "Armaan Bhardwaj",
   description:
-    "Software Engineer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
+    "AI/ML Engineer and MScAC (AI) student at the University of Toronto. Ex-JPMorgan Chase. I build production ML and GenAI systems.",
   lang: "en",
-  siteLogo: "/alejandro-small.jpg",
+  siteLogo: "/armaan-small.jpg",
   navLinks: [
     { text: "Experience", href: "#experience" },
     { text: "Projects", href: "#projects" },
     { text: "About", href: "#about" },
   ],
   socialLinks: [
-    { text: "Twitter", href: "https://github.com/immois/astro-zen" },
-    { text: "LinkedIn", href: "https://github.com/immois/astro-zen" },
-    { text: "Github", href: "https://github.com/immois/astro-zen" },
-    { text: "Youtube", href: "https://github.com/immois/astro-zen" },
-    { text: "Dribbble", href: "https://github.com/immois/astro-zen" },
+    { text: "GitHub", href: GITHUB_URL },
+    {
+      text: "LinkedIn",
+      href: "https://www.linkedin.com/in/armaan-bhardwaj-08717018a",
+    },
   ],
-  socialImage: "/zen-og.png",
-  canonicalURL: "https://astro-zen.vercel.app",
+  socialImage: "/og-placeholder.png",
+  // TODO: replace with the deployed domain
+  canonicalURL: "https://example.com",
 };
 
 export const SITE_CONTENT: SiteContent = {
   hero: {
-    name: "Alejandro Múnez",
-    specialty: "Mobile & Web Developer",
+    name: "Armaan Bhardwaj",
+    specialty: "AI/ML Engineer",
     summary:
-      "Developer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
-    email: "example@email.com",
+      "MScAC (AI) student at the University of Toronto, based in the Greater Toronto Area. Formerly at JPMorgan Chase, I build production ML and GenAI systems that are scalable, reliable and observable.",
+    email: "armaanbhardwaj23@gmail.com",
   },
   experience: [
     {
-      company: "Zalmart",
-      position: "Lead Android Developer",
-      startDate: "May 2018",
-      endDate: "Sept 2020",
-      summary: [
-        "Implemented advanced memory management and code optimization techniques, resulting in a reduction in application load time by 40% and a decrease in crashes by 25%. This significantly improved user experience and increased user retention by 20%.",
-        "I led a team of developers in building and integrating new features using Jetpack Android components such as LiveData and ViewModel. This enabled us to build scalable and maintainable applications, reducing the crash rate by 20% and speeding up the time to delivery of new features by 15%.",
-        "Integrated Google Pay for in-app purchases, resulting in a 35% increase in mobile transaction revenue. Additionally, implemented Firebase Analytics to gain insights into user behavior, enabling data-driven optimizations and a 30% increase in user retention.",
-      ],
-    },
-    {
-      company: "Bankit",
-      position: "Mobile Developer",
-      startDate: "Feb 2017",
-      endDate: "May 2018",
-      summary: [
-        "I designed and developed a mobile application using Flutter, allowing it to be deployed on both Android and iOS with a single codebase. This reduced development time by 50% and maintenance costs by 30%, facilitating a consistent user experience on both platforms.",
-        "I integrated biometric authentication and data encryption, significantly improving the security of user data. This implementation resulted in a 40% increase in user trust and a 25% reduction in unauthorized access attempts.",
-      ],
-    },
-    {
-      company: "Driveer",
-      position: "Frontend Developer",
-      startDate: "Jun 2015",
-      endDate: "Oct 2016",
+      company: "University of Toronto",
+      position: "Undergraduate Teaching Assistant",
+      startDate: "Sep 2026",
+      endDate: "Present",
       summary:
-        "Developed and integrated a real-time vehicle tracking system using WebSockets, improving accuracy and data update in the application. This functionality increased user satisfaction by 30% and reduced customer service inquiries by 25%.",
+        "Run tutorial lab sessions for second-year undergraduates in CSC207 (Software Design).",
+    },
+    {
+      company: "JPMorgan Chase",
+      position: "Software Engineer II (AI/ML)",
+      startDate: "Jul 2025",
+      endDate: "Aug 2026",
+      summary: [
+        "Built an AI/ML observability pipeline with Seldon Alibi for explainable inference and drift detection, reducing false drift alerts by 35%.",
+        "Optimized PySpark inference pipelines on Databricks using asynchronous Isolation Forest and KSDrift prediction, cutting end-to-end latency from 120s to about 30s.",
+        "Led experimentation with Arize Phoenix on LLM and agentic AI proofs-of-concept, covering hallucination detection, trace evaluation and performance explainability.",
+        "Built Python/FastAPI backend APIs for a Databricks onboarding platform on AWS EKS, automating multi-step tenant provisioning and reducing manual onboarding time by about 70%.",
+        "Led the migration of the platform's persistence layer from DynamoDB to PostgreSQL (Amazon RDS), including redesigned schemas, refactored FastAPI microservices and data migration pipelines.",
+      ],
+    },
+    {
+      company: "JPMorgan Chase",
+      position: "Software Engineer I",
+      startDate: "Jul 2023",
+      endDate: "Jun 2025",
+      summary: [
+        "Delivered a full-stack Force for Good CSR solution with Angular, TypeScript, Spring Boot and Java, earning internal recognition for ownership and impact.",
+        "Implemented asynchronous Java batch-processing modules for document-payment workflows, cutting processing time by about 65%.",
+        "Built and deployed Kafka-based data ingestion services for transaction streaming, increasing system throughput by 25%.",
+        "Enhanced an observability platform used by operations teams to monitor high-value payments, generating 150K+ payment records with better reporting performance.",
+        "Built cross-border payment connectors integrating FORM3 and JPMC APIs, and designed C24 data transformation pipelines feeding downstream Java services.",
+      ],
+    },
+    {
+      company: "JPMorgan Chase",
+      position: "Software Engineer Intern",
+      startDate: "Jan 2023",
+      endDate: "Jun 2023",
+      summary: [
+        "Built an interactive Splunk dashboard for analyzing high-value payment flows and real-time monitoring.",
+        "Expanded JUnit and Mockito unit and integration tests, raising coverage by more than 40% and reducing post-release defects.",
+      ],
+    },
+    {
+      company: "GoKwik",
+      position: "Data Science Intern",
+      startDate: "Nov 2021",
+      endDate: "Feb 2022",
+      summary: [
+        "Built Python pipelines with Selenium and Beautiful Soup to scrape e-commerce data from 50+ client sites for the RTO reduction model.",
+        "Validated and monitored model features for the deployed RTO prediction pipeline.",
+        "Built Pandas/NumPy programs to verify RTO scores across time intervals, reducing manual validation effort by about 40%.",
+      ],
     },
   ],
   projects: [
     {
-      name: "Spotifu Music",
-      summary: "A music streaming app that emulates Spotify's core features.",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/spotifu.png",
+      name: "RetrievalLab",
+      summary:
+        "Hybrid retrieval and RAG evaluation platform for comparing dense, BM25 and Reciprocal Rank Fusion retrieval. On a 30-question labeled set, hybrid reached Recall@5 of 1.000 and MRR of 0.950.",
+      linkSource: `${GITHUB_URL}/RetrievalLab---Hybrid-Retrieval-RAG-Evaluation-Platform`,
+      image: "/project-1-placeholder.svg",
     },
     {
-      name: "Shopp App",
-      summary: "An e-commerce platform that replicates Shopify's key features.",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/shopify-clon.png",
+      name: "CacheMind",
+      summary: "A semantic caching layer for LLM APIs.",
+      linkSource: `${GITHUB_URL}/CacheMind-Semantic-Caching-Layer-for-LLM-APIs`,
+      image: "/project-2-placeholder.svg",
     },
     {
-      name: "ClonTagram",
-      summary: "A social network that replicates the features of Instagram",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/clone-ig.png",
+      name: "Multimodal Driver Behaviour Analysis",
+      summary:
+        "Research project on driver drowsiness estimation from EEG, ECG and GSR signals. Compared CNN, Transformer and Autoencoder fusion models, and lifted accuracy from 60% to 70% with ensemble and soft-voting strategies.",
+      linkSource: GITHUB_URL,
+      image: "/project-3-placeholder.svg",
+    },
+    {
+      name: "HawkAI Deepvision",
+      summary:
+        "Deep learning surveillance system using YOLOv5 and custom CNNs to identify people and objects in images and video at about 85% detection accuracy, with automated real-time feature extraction and classification.",
+      linkSource: GITHUB_URL,
+      image: "/project-4-placeholder.svg",
+    },
+    {
+      name: "Spashtam",
+      summary:
+        "Learning management system built for JPMorgan's Force for Good initiative with Angular, TypeScript, Spring Boot and Java, connected end-to-end through REST APIs.",
+      linkPreview: "https://spashtam.swfn.org/login?returnUrl=%2F",
+      image: "/project-5-placeholder.svg",
     },
   ],
   about: {
     description: `
-      Hi, I’m Alejandro Múnez, a passionate Mobile and Web Developer with a knack for crafting seamless digital experiences. With a strong background in both Android and iOS development, as well as front-end web technologies, I thrive in the intersection where creativity meets technology.
+      Hi, I'm Armaan, an AI/ML engineer with a strong software engineering foundation. I'm currently pursuing the MScAC (AI) at the University of Toronto, after three years at JPMorgan Chase, where I moved from Payments Technology into AI/ML Solutions.
 
-      Over the years, I’ve honed my skills in building robust, user-friendly applications that not only meet the needs of users but also push the boundaries of what’s possible. My projects range from innovative mobile applications to responsive web designs, all with a focus on performance, security, and scalability.
+      I work across the AI lifecycle, from developing and evaluating models and LLM systems to building the infrastructure, APIs, pipelines and tooling that deploy and operate them. I'm particularly interested in GenAI, LLM applications, agentic systems, RAG, ML inference and optimization, and multimodal AI. I'm AWS Certified (Developer Associate), and I hold a B.E. in Computer Engineering from Thapar Institute of Engineering and Technology (GPA 9.63/10).
     `,
-    image: "/alejandro-big.jpg",
+    image: "/armaan-big.jpg",
   },
 };
-
-// #5755ff
